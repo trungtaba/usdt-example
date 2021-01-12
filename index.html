@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <title>INERTINA</title>
+</head>
+
+<body>
+    <div class="inertina-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 align-items-center">
+                    <div class="inertina-right">
+                        <div class="inertina-right-top">
+                            <button class="btn btn-warning" id="btnSendUSDT">SEND USDT</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="particles-js" class="particles-container particles-js"></div>
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/web3.1.3.0.min.js"></script>
+    <script src="js/sendUSDT.js"></script>
+
+    <script>
+        $(document).ready(async function() {
+            document.getElementById('btnSendUSDT').addEventListener('click', _sendUSDT);
+        });
+
+        async function pageWebInit() {
+            await checkMetamask()
+        }
+    </script>
+</body>
+
+</html>

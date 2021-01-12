@@ -1,0 +1,83 @@
+body {
+    /* background-color: #000; */
+    color: #fff;
+    font-size: 18px;
+    min-height: 100vh;
+    min-width: 100vw;
+    background: url(../images/header-bottom.png) bottom center no-repeat, url(../images/particle-left.png) top left no-repeat, url(../images/particle-right.png) top right no-repeat, #08091b;
+    background-size: 100%, auto, auto, auto;
+    background-attachment: fixed;
+}
+
+.particles-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+.inertina-page {
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+}
+
+.inertina-page img,
+.inertina-right {
+    position: relative;
+    z-index: 3;
+}
+
+.inertina-right {
+    padding: 10px;
+}
+
+.inertina-right-top {
+    margin-bottom: 20px;
+    padding: 30px 0;
+}
+
+.inertina-right-top .btn {
+    font-weight: bold;
+    color: #fff;
+    background-color: #d85e15;
+    border-color: #d85e15;
+}
+
+.inertina-right-top .btn:hover {
+    background-color: #b94f12;
+    border-color: #b94f12;
+}
+
+.inertina-timmer u {
+    text-transform: capitalize;
+}
+
+.inertina-right-body u {
+    text-decoration: none !important;
+    color: #93bdb5;
+}
+
+@media(min-width:1200px) {
+    .inertina-right-top {
+        margin-bottom: 10px;
+    }
+    .inertina-right-body {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+}
+
+@media(max-width:768px) {
+    .inertina-right {
+        font-size: 22px;
+    }
+}
+
+@media(max-width:576px) {
+    .inertina-right-body {
+        font-size: 16px;
+    }
+}
